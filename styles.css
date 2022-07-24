@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /*CSS Smooth Scroll*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover{
+    color: skyblue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    
+}
+
+section h1{
+    font-size: 4rem;
+    color: deepskyblue;
+    margin-left: 15%;
+    float: left; 
+    margin-top:0%;
+    width: 35%;
+    line-height: normal;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+section p{
+    font-size: 1.5rem;
+    color: black;
+    float: left;
+    margin-left:15%;
+    width: 50%;
+    line-height: normal;
+    font-size: 2.2em;
+}
+
+/*About de carpeta de campo*/
+.about-box  {
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 9px 0px;
+    max-width: 50%;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-left:12%;
+    width: 50%;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Estilo para el boton*/
+.boton{text-decoration:none; text-align:center; 
+    padding:11px 32px; 
+    border:solid 1px #004F72; 
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px; 
+    border-radius: 8px; 
+    font:18px Tahoma, Geneva, sans-serif; 
+    font-weight:normal; 
+    color:#ffffff; 
+    background:#1481e0; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+     
+     }.boton:hover{
+    padding:11px 32px; 
+    border:solid 1px #003772; 
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px; 
+    border-radius: 8px; 
+    font:18px Tahoma, Geneva, sans-serif; 
+    font-weight:normal; 
+    color:#ffffff; 
+    background:#053994; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+     
+    }
+
+/*Colores segmentos específicos*/
+section#integrantes h1{
+    margin-top: 5%;
+    color: red;
+}
+section#home p{
+    color: white;
+}
+
+section#proyecto h1{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+section#proyecto p{
+    color: white;
+}
+
+section#home p{
+    color: white;
+}
+
+/*Section Images*/
+section#home {
+    background: url('images/drone-1.jpg') no-repeat center center/cover;;
+  }
+  
+  section#proyecto {
+    background: url('images/drone-2.jpg') no-repeat center center/cover;;
+  }
+  
+  section#integrantes {
+    background: url('images/drone-3.jpg') no-repeat center center/cover;;
+  }
+  
+ 
